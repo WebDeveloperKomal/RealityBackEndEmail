@@ -18,7 +18,7 @@ public class EmailServiceImpl implements EmailService {
 	public void sendThankYouEmail(String to, String subject, String text) {
 		// TODO Auto-generated method stub
 		   SimpleMailMessage message = new SimpleMailMessage(); 
-	        message.setFrom("patilkhushal5468@gmail.com");
+	        message.setFrom("promunim.of.india2023@gmail.com");
 	        message.setTo(to); 
 	        message.setSubject(subject); 
 	        message.setText(text);

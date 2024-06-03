@@ -28,6 +28,7 @@ public class Comment {
 	private int id;
 	private String blogId;
 	private String comment;
+	private String number;
 	private String email;
 	private String name;
 	private String website;

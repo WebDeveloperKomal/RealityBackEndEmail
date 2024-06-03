@@ -1,8 +1,9 @@
 package com.example.Entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,16 +21,14 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class ContactUs {
+public class FooterContact {
 
 	@Id
 	@GeneratedValue
 	private int id;
-	private String name;
-	private String subject;
-	private String number;
 	private String email;
-	private String message;
+	private String number;
+	private String address;
 	
 	@Column(name = "is_deleted", nullable = false)
 	private boolean isDeleted;
@@ -37,6 +36,7 @@ public class ContactUs {
 	@Column(name = "insert_time", updatable = false)
 	@CreationTimestamp
 	private Date insertTime = new Date(id);
+	
 	
 	
 }
